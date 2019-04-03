@@ -1,21 +1,58 @@
 package sample;
 
 public class Person {
+    protected String person_ID;
+    protected String name;
+    protected String email;
 
-    private String personID;
-    private String navn;
-    private String epost;
+  Person(String person_ID,String name,String email){
+      this.person_ID = person_ID;
+      this.name = name;
+      this.email = email;
+
+  }
+
+    public String getPerson_ID() {
+        return person_ID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
 
 }
 
 
-class Kontakt_person extends Person{
+class Contact_Person extends Person{
+    private String website;
+    private String affiliation;
+    private String other_info;
 
-    private String nettside;
-    private String tilknytning; //privat firma, virksomhet
-    private String annet; //tekst med andre opplysninger
 
+   Contact_Person(String website,String affiliation,String other_info){
+       super(person_ID, name, email);
+       this.website = website;
+       this.affiliation = affiliation;
+       this.other_info = other_info;
 
+   }
+
+    public String getWebsite(){
+        return website;
+    }
+
+    public String getAffiliation(){
+        return affiliation;
+    }
+
+    public String getOther_info(){
+        return other_info;
+    }
 
 
 }

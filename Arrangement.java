@@ -1,23 +1,22 @@
 package sample;
 
+
 import java.util.List;
 
 public class Arrangement {
-    private Kontakt_person kontaktperson;
-    private Lokale lokale;
-    private String navn;
+    private Contact_Person contact_person;
+    private Local local;
+    private String name;
     private List artist;
     private String program;
-    private Billett billett;
-    private int billettsalg;
+    private Ticket ticket;
+    private int ticket_sales;
+
+
+
+
+
+
+
 
 }
-
-/*public int billettsalg(){
-     int billettsalg;
-     return billettsalg;
-
-
-
- }
- */
